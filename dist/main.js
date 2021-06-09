@@ -1,1 +1,1 @@
-alert("Hello");
+(()=>{"use strict";alert("Hello"),function(e){(void 0).preventDefault();let t=document.getElementById("name").value;checkForName(t),console.log("::: Form Submitted :::"),fetch("http://localhost:8080/test").then((e=>e.json())).then((function(e){document.getElementById("results").innerHTML=e.message}))}()})();
